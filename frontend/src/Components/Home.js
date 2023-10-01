@@ -38,29 +38,48 @@ function Home() {
           <Grid item xs={12} md={6} xl={4} className={classes.paper}>
             <img className={classes.avatar} src={logo} alt="Logo" />
             <Typography component="h1" variant="h5" className={classes.heading}>
-              pollrBot
+              poll-r-bot-rus
             </Typography>
-            <Typography style={{ width: '80%', maxWidth: 350, textAlign: 'center' }}>
+
+            {/* <Typography style={{ width: '80%', maxWidth: 350, textAlign: 'center' }}>
               Hello! I am a chat bot for Telegram that helps you by creating polls for your group or private chat.
+            </Typography> */}
+
+            <Typography style={{ width: '80%', maxWidth: 350, textAlign: 'center' }}>
+              Привет! Я чат-бот для Telegram, который помогает вам создавать опросы для вашей группы или частного чата.
             </Typography>
+
             <Link style={{marginTop: '2vh', textDecoration: 'none'}} href="https://telegram.me/pollrBot">
               <Button variant="contained" color="primary">Add me on Telegram</Button>
             </Link>
 
-            <Typography style={{marginTop: '50px'}}>
+            {/* <Typography style={{marginTop: '50px'}}>
               Before creating polls, you need to activate the bot by sending "/start".
+            </Typography> */}
+
+            <Typography style={{marginTop: '50px'}}>
+              Прежде чем создавать опросы, вам необходимо активировать бота, отправив «/start».
             </Typography>
+
             <ChatBubble
               messages={[
                 {
                   type: 0,
                   text: '/start'
                 },
+
+                // {
+                //   type: 1,
+                //   text: <>I can help you create, send and manage polls.<br/><br/>What do you want to do?</>,
+                //   buttons: ['create poll'],
+                // },
+
                 {
                   type: 1,
-                  text: <>I can help you create, send and manage polls.<br/><br/>What do you want to do?</>,
-                  buttons: ['create poll'],
-                },
+                  text: <>Я могу помочь вам создавать и управлять опросами, а также отправлять их.<br/><br/>Что Вы хотите сделать?</>,
+                  buttons: ['создать опрос'],
+                }
+
               ]}
             />
             <Typography style={{marginTop: '20px'}}>

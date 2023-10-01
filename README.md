@@ -20,7 +20,7 @@ if you have a working Go environment.
 
 After that you can run the bot with
 ```
-URL="https://pollr.yourdomain.com" DB="database.db" APITOKEN="euiaeouiaouiao" pollrBot
+URL="https://pollr.yourdomain.com" && DB="database.db" && APITOKEN="euiaeouiaouiao" && pollrBot
 ```
 
 ## Statistics of pollrBot
